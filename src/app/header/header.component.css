@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  padding: 50px 11% 10px 11%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.topNav {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.topNav a {
+  text-decoration: none;
+}
+
+.topNav a h1 {
+  font-weight: 300;
+  font-size: 2em;
+  color: #f4e3cf;
+}
+
+.searchBar {
+  width: 40%;
+}
+
+::placeholder {
+  color: #953e46;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.form-control {
+  border: transparent;
+  background-color: #f4e3cf;
+  padding: 0.5em;
+  height: 2.5em;
+}
+
+.searchBtn {
+  background-color: #f4e3cf;
+  border: transparent;
+  border-radius: 0 5px 5px 0;
+  height: 2.5em;
+}
+
+.searchLogo {
+  background-color: #f4e3cf;
+  margin: 0.3em;
+  font-size: 1.5em;
+  color: #953e46;
+}
+
+.uploadButton {
+  margin-left: -1.5em;
+  align-self: baseline;
+  top: 0.4em;
+  position: relative;
+  background-color: #f4e3cf;
+  height: 2.5em;
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+  border-radius: 5px;
+}
+
+.uploadLogo {
+  background-color: #f4e3cf;
+  margin-right: 0.5em;
+  color: #953e46;
+}
+
+.uploadButton p {
+  background-color: #f4e3cf;
+  font-size: 0.75em;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 0.35em;
+  margin-left: -1.5em;
+}
+
+.accountBtn {
+  text-decoration: none;
+  height: 2.5em;
+  width: 2.5em;
+  background-color: #f4e3cf;
+  margin-right: 0.5em;
+}
+
+.accountBtn span {
+  color: #953e46;
+  background-color: #f4e3cf;
+  margin-right: -0.5em;
+  margin-top: 0.2em;
+}
+
+.dropdown-menu {
+  border: transparent;
+}
+
+.dropdown-menu li a {
+  color: #f4e3cf;
+}
+
+.username h1 {
+  color: #f4e3cf;
+  font-size: 1.5em;
+}
+
+.username h3 {
+  color: #f4e3cf;
+  font-size: 0.8em;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: column;
+  width: 95%;
+}
+
+.container hr {
+  margin: 10px 0;
+  border-bottom: 2px solid #f4e3cf;
+}
+
+.breadcrumb li {
+  letter-spacing: 2px;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #f4e3cf;
+}
+
+.breadcrumb li a:hover {
+  /* text-decoration: none; */
+  color: #acabab;
+}
+
+@media only screen and (max-width: 480px) {
+  .topNav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topNav a h1 {
+    font-size: 2.4em;
+  }
+
+  .searchBar {
+    margin-top: 1em;
+    width: 100%;
+  }
+
+  .uploadButton {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+
+  .dropdown {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .username {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .username h3 {
+    margin-left: 0.35em;
+    font-size: 1.5em;
+  }
+
+  .topLine {
+    display: none;
+  }
+
+  .breadcrumb-item {
+    display: none;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 900px) {
+  .topNav {
+    margin-left: -5%;
+    width: 111%;
+  }
+
+  .bottomNav {
+    margin-bottom: -2em;
+  }
+
+  .bottomNav hr {
+    margin-left: -8%;
+    width: 117%;
+  }
+
+  .topNav a h1 {
+    font-size: 1.4em;
+  }
+
+  .searchBar {
+    width: 30%;
+  }
+
+  .uploadButton {
+    top: -0.1em;
+  }
+
+  .uploadLogo {
+    display: none;
+  }
+
+  .dropdown {
+    top: 0.3em;
+  }
+
+  .username h1 {
+    font-size: 1em;
+  }
+
+  .username h3 {
+    font-size: 1em;
+  }
+
+  .breadcrumb {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    max-width: 70%;
+  }
+
+  .breadcrumb li a {
+    font-size: 0.8em;
+  }
+}

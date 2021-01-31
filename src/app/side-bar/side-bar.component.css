@@ -1,0 +1,175 @@
+.sidebar {
+  /* margin-bottom: 5.15em; */
+  margin-bottom: 7em;
+}
+.subject {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.feature a {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #f4e3cf;
+}
+
+.feature a:hover {
+  color: #aa9b8a;
+}
+
+.title h1 {
+  font-size: 1.5em;
+  color: #f4e3cf;
+}
+
+.sidebar hr {
+  margin-top: 0;
+  border-bottom: 3px solid #f4e3cf;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: -0.1em;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  /* width: 40rem; */
+  height: 16%;
+}
+
+.material {
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  /* height: 60px; */
+  height: 3.5rem;
+  /* width: 100px; */
+  width: 5rem;
+  margin-right: 1em;
+  /* background: blue; */
+  border-radius: 3%;
+}
+
+.material:hover {
+  filter: grayscale(100%);
+  transition-delay: 0.15s;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainActivity {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.Username {
+  font-size: 1rem;
+  max-height: 1.5em;
+  margin-right: 0.3em;
+  color: #f4e3cf;
+}
+
+.doingSomething {
+  font-size: 0.65rem;
+  color: #f4e3cf;
+}
+
+.Comment {
+  margin-top: -1.5em;
+  font-size: 0.7rem;
+  color: #f4e3cf;
+}
+
+.timeline {
+  margin-top: -0.9em;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.timeLogo {
+  font-size: 0.75rem;
+  margin-right: 0.4em;
+  margin-top: -1.3em;
+  position: relative;
+  align-self: center;
+  color: #f4e3cf;
+}
+
+.timeline p {
+  font-size: 0.7rem;
+  color: #f4e3cf;
+}
+
+/* efffffffffffffffffffffffffffffffffffffffffffffffffff */
+.sidebarBottom {
+  margin-top: -1.4em;
+}
+
+.sidebarBottom hr {
+  margin: 0;
+  border-bottom: 3px solid #f4e3cf;
+}
+
+.contentsBottom {
+  height: 95vh;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: grid;
+  gap: 0.7em;
+  row-gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.contentBottom {
+  background-size: cover;
+  /* background: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 3%;
+}
+
+.contentBottom:hover {
+  filter: grayscale(100%);
+  transition-delay: 0.15s;
+}
+
+.contentBottom h3 {
+  background: transparent;
+  color: #f4e3cf;
+  margin-left: 0.5em;
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+
+  .sidebarBottom {
+    display: none;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 900px) {
+  .sidebar {
+    display: none;
+    margin: 0;
+  }
+
+  .sidebarBottom {
+    display: none;
+  }
+}

@@ -1,0 +1,45 @@
+<div class="contentCards">
+
+    <div class="subject">
+        <div class="title">
+            <h1>
+                People
+            </h1>
+        </div>
+        <div class="feature">
+            <a href="">
+                View all
+            </a>
+        </div>
+    </div>
+
+    <div class="cards">
+
+        <div class="bigCard" 
+            style="background-image: url(https://cdn.britannica.com/36/147936-050-1A006571/Dwayne-Johnson.jpg);">
+            <div class="fileInfo">
+                <div class="fileTitle">
+                    People's elbow
+                </div>
+                <div class="uploader">Dwayne</div>
+            </div>
+
+            <div class="view">74243 views</div>
+        </div>
+
+        <div class="card1" style="background-image: url({{person.photo|lowercase}});" *ngFor="let person of people">
+            <div class="cardContainer">
+                <div class="uploader">{{person.uploader |lowercase}}</div>
+                <!-- <div class="view"> {{person.views|number}} views</div> -->
+            </div>
+        </div>
+
+        <div class="uploadCard">
+            <button class="uploadButton" onclick="document.getElementById('myfile').click()">
+                <span class="uploadLogo material-icons">add_circle_outline</span>
+                <p>Show Your Work</p>
+                <input type="file" id="myfile" style="display: none;" name="myfile">
+            </button>
+        </div>
+    </div>
+</div>

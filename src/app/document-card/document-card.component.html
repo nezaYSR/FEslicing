@@ -1,0 +1,46 @@
+<div class="contentCards">
+
+    <div class="subject">
+        <div class="title">
+            <h1>
+                Documents
+            </h1>
+        </div>
+        <div class="feature">
+            <a href="">
+                Browse All
+            </a>
+        </div>
+    </div>
+
+    <div class="cards">
+
+        <div class="bigCard"
+            style="background-image: url(https://s1.nyt.com/du/books/images/9780385348713.jpg);">
+            <div class="fileInfo">
+                <div class="fileTitle">
+                    The Splendid and The Vile
+                </div>
+                <div class="uploader">Erik Larson</div>
+            </div>
+
+            <div style="align-self: flex-end;" class="view">94,643 views</div>
+        </div>
+
+        <div class="card1" style="background-image: url({{doc.image|lowercase}});" *ngFor="let doc of docs">
+            <div class="cardContainer">
+                <!-- <div class="title">{{doc.title |lowercase}}</div> -->
+                <div class="uploader">{{doc.uploader |lowercase}}</div>
+                <div class="view"> {{doc.views|number}} views</div>
+            </div>
+        </div>
+
+        <div class="uploadCard">
+            <button class="uploadButton" onclick="document.getElementById('myfile').click()">
+                <span class="uploadLogo material-icons">add_circle_outline</span>
+                <p>Share Your Document</p>
+                <input type="file" id="myfile" style="display: none;" name="myfile">
+            </button>
+        </div>
+    </div>
+</div>

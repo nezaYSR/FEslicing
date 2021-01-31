@@ -1,0 +1,45 @@
+<div class="contentCards" >
+
+    <div class="subject">
+        <div class="title">
+            <h1>
+                Videos
+            </h1>
+        </div>
+        <div class="feature">
+            <a href="">
+                Browse all videos
+            </a>
+        </div>
+    </div>
+
+    <div class="cards"  >
+
+        <div class="bigCard" style="background-image: url(https://lh3.googleusercontent.com/proxy/f7rB33OKv65i2RjFu8jWRdV0U3s7ABw8pEOn63U30RAjLBFpbCyVNOxQL2JekqsVPhKZduuwiToV3XIk4GfvWgcW1VlQrceSlgHQjdDeCDFQgCwycSfbA2Yv3gGI);">
+            <div class="fileInfo">
+                <div class="fileTitle">
+                    apakek
+                </div>
+                <div class="uploader">Burger</div>
+            </div>
+
+            <div class="view">233443 views</div>
+        </div>
+
+        <div class="card1" style="background-image: url({{content.image|lowercase}});" *ngFor="let content of contents">
+            <div class="cardContainer">
+                <div class="uploader">{{content.uploader |lowercase}}</div>
+                <div class="view"> {{content.views|number}} views</div>
+            </div>
+        </div>
+
+        <div class="uploadCard">
+            <button class="uploadButton" onclick="document.getElementById('myfile').click()">
+                <span class="uploadLogo material-icons">add_circle_outline</span>
+                <p>Upload your own video</p>
+                <input type="file" id="myfile" style="display: none;" name="myfile">
+            </button>
+        </div>
+    </div>
+</div>
+

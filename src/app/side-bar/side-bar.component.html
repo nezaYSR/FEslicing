@@ -1,0 +1,63 @@
+<div class="sidebar">
+    <div class="subject">
+        <div class="title">
+            <h1>
+               Activity
+            </h1>
+        </div>
+        <div class="feature">
+            <a href="">
+                View timeline
+            </a>
+        </div>
+    </div>
+    <hr>
+
+    <div class="contents" *ngFor="let activity of activities">
+
+        <div  class="content">
+           <div class="material" style="background-image: url({{activity.image|lowercase}});"></div>
+            <div class="article">
+                <div class="mainActivity">
+                    <p class="Username"> <b>{{activity.uploader|lowercase}}</b> </p>
+                    <p class="doingSomething">{{activity.verb|lowercase}}</p>
+                </div>
+                <p class="Comment">{{activity.caption|lowercase}}</p>
+                <div class="timeline">
+                    <span class="timeLogo material-icons">
+                        {{activity.logo|lowercase}}
+                    </span>
+                    <p>{{activity.time|lowercase}}</p>
+                </div>
+            </div> 
+        </div>
+
+    </div>
+    <hr>
+</div>
+
+<div class="sidebarBottom">
+    <div class="subject">
+        <div class="title">
+            <h1>
+                Channels
+            </h1>
+        </div>
+        <div class="feature">
+            <a href="">
+                Browse all channels
+            </a>
+        </div>
+    </div>
+    <hr>
+
+    <div class="contentsBottom" >
+
+        <div class="contentBottom" style="background-image: url({{channel.image|lowercase}});" *ngFor="let channel of channels">
+            <div class="plusLogo"></div>
+            <h3>{{channel.uploader|lowercase}}</h3>
+        </div>
+       
+    </div>
+    <hr>
+</div>
